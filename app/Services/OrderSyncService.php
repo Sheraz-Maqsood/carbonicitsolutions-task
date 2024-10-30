@@ -24,6 +24,7 @@ class OrderSyncService
                     'json' => $order,
                 ]);
                 $responses[] = json_decode($response->getBody()->getContents(), true);
+            //logic of sync or repository will be implemented here .
             } catch (RequestException $e) {
 
                 $responses[] = [
