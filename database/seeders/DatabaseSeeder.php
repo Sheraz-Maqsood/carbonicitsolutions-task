@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\{User,Order,Product};
+use App\Models\{User,Product};
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 

@@ -35,7 +35,7 @@
                                 {{ $product->name }} ({{ $product->pivot->quantity }})<br>
                             @endforeach
                         </td>
-                        <td>
+                        {{-- This is only for testing to dispatch the job but in real world we use supervisor and cron job | In order to check this you must start que worker  --}}<td>
                             <form action="{{ route('orders.sync', $order->id) }}" method="POST">
                                 @csrf
                                 <button type="submit" class="btn btn-primary">Sync Order</button>
